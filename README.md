@@ -16,7 +16,10 @@ gcloud config set project {PROJECT_ID}
 # gcloud components update to get the latest version (including beta versions)
 gcloud components update
 
-# creates a Kubernetes Cluster, namespace, and installs Jupyterhub
+# modify the singularity.image.name in the config.yaml to a custom image. here is the [Example Dockerfile](https://github.com/snamburi3/gcloud-jupyterhub). The config pulls the image from Dockerhub
+
+# create a Kubernetes Cluster, Kubernetes namespace, and install Jupyterhub. 
+# make changes to the parameters in the Makefile
 make deploy
 
 # Delete the cluster

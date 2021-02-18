@@ -8,7 +8,7 @@ singleuser:
   rbac:
     enabled: true
   image:
-    name: snamburi3/gcloud-jupyterhub
+    name: snamburi3/omero_for_developers
     tag: latest
   extraEnv:
     GRANT_SUDO: "yes"
