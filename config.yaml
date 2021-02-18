@@ -1,0 +1,24 @@
+proxy:
+  service:
+    type: LoadBalancer
+  secretToken: "4235da6ad3e92513ebf9da8377f91ac482629cb7e559a392595be5343ba24ceb"
+
+singleuser:
+  defaultUrl: "/lab"
+  rbac:
+    enabled: true
+  image:
+    name: snamburi3/gcloud-jupyterhub
+    tag: latest
+  extraEnv:
+    GRANT_SUDO: "yes"
+    NOTEBOOK_ARGS: "--allow-root"
+  uid: 0
+  cmd: start-singleuser.sh
+  memory:
+    limit: 1G
+    guarantee: 1G
+hub:
+  extraConfig:
+    jupyterlab: |
+      c.Spawner.default_url = "/lab"
