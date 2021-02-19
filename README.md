@@ -16,6 +16,13 @@ gcloud config set project {PROJECT_ID}
 # gcloud components update to get the latest version (including beta versions)
 gcloud components update
 
+# Install helm (The minimum supported version of Helm in Z2JH is 3.2.0.)
+curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
+
+# add the JupyterHub Helm chart repository 
+helm repo add jupyterhub https://jupyterhub.github.io/helm-chart/
+helm repo update
+
 # modify the singularity.image.name in the config.yaml to a custom image. here is the [Example Dockerfile](https://github.com/snamburi3/gcloud-jupyterhub). The config pulls the image from Dockerhub
 
 # create a Kubernetes Cluster, Kubernetes namespace, and install Jupyterhub. 
