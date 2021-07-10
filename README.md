@@ -1,13 +1,14 @@
+# jupyterhub-for-workshops
+
 ---
 **Deprecation Notice**
 
-Although the below deployment works, please use [this repository](https://github.com/TheJacksonLaboratory/jupyterhub-on-gke) for more secure Jupyterhub deployment.
+>> Although the below deployment works, please use [this repository](https://github.com/TheJacksonLaboratory/jupyterhub-on-gke) for more secure Jupyterhub deployment.
 
-Secure Deployment of Jupyterhub on GKE: https://github.com/TheJacksonLaboratory/jupyterhub-on-gke.
+>> Secure Deployment of Jupyterhub on GKE: https://github.com/TheJacksonLaboratory/jupyterhub-on-gke.
 
 ---
 
-# jupyterhub-for-workshops
 Script to setup Jupyterhub for workshops
 
 The script creates a Kubernetes Cluster and runs the Jupyterhub helm chart (0.10.6). This setup does not allow users to connect to GCP resources. 
