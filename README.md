@@ -1,3 +1,12 @@
+---
+**Deprecation Notice**
+
+Although the below deployment works, please use [this repository](https://github.com/TheJacksonLaboratory/jupyterhub-on-gke) for more secure Jupyterhub deployment.
+
+Secure Deployment of Jupyterhub on GKE: https://github.com/TheJacksonLaboratory/jupyterhub-on-gke.
+
+---
+
 # jupyterhub-for-workshops
 Script to setup Jupyterhub for workshops
 

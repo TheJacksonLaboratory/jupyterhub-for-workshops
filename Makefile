@@ -31,7 +31,7 @@ create-cluster:
 	@echo "Create GKE Cluster"
 	gcloud beta container --project ${PROJECT_ID} clusters create ${CLUSTER_ID} \
         --zone ${ZONE} \
-        --no-enable-basic-auth --cluster-version "1.17.15-gke.800" \
+        --no-enable-basic-auth \
         --release-channel "regular" \
         --machine-type ${INSTANCE_TYPE} \
         --image-type "COS" \
